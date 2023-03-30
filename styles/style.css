@@ -29,7 +29,6 @@ header {
 	color: var(--text-color);
 	background-color: var(--sub-bg-color);
 	transition: 0.2s ease-in-out;
-	box-shadow: var(--header-shadow);
 	margin-bottom: 3.5em;
 }
 
@@ -84,7 +83,7 @@ ul {
 /* previous, next button */
 a {
 	transition: 0.1s ease-in-out;
-	color: var(--main-btn-text);
+	color: var(--btn-text);
 	text-decoration: none;
 	padding: 0.5em 1.5em;
 	background-color: var(--main-btn);
@@ -95,7 +94,6 @@ a {
 /* secondary a button */
 .asecondary {
 	background-color: var(--second-btn);
-	color: var(--second-btn-text) !important;
 }
 
 /* MEDIA QUERY */
