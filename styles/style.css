@@ -2,12 +2,31 @@
 @import url("./variables.css");
 
 /* GLOBAL STYLING */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: "Lato", sans-serif;
+	transition: 0.2s ease-in-out;
+}
+
+body:has(#color__mode:checked) {
+	--bg-color: var(--bg-color-dark);
+	--sub-bg-color: var(--sub-bg-color-dark);
+	--text-color: var(--text-color-dark);
+	--sub-text-color: var(--sub-text-color-dark);
+}
+
+a {
+}
+
+submit {
+	display: hidden;
 }

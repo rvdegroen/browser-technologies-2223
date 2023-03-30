@@ -1,0 +1,29 @@
+/* CUSTOM COLORS */
+
+:root {
+	/* default: lightmode */
+	--bg-color: #f3f3f3;
+	--sub-bg-color: #ffffff;
+
+	--text-color: #4f4f4f;
+	--sub-text-color: #a5a5a5;
+
+	/* global colors */
+	--primary-color: #41c1a5;
+	--secondary-color: #fcab61;
+
+	--quality-filled: #fcbe61;
+	--quality-not-filled: #c5c5c5;
+
+	--box-shadow-blur: #00000071;
+	--selected-color: #06896c;
+
+	--delete-color: #ed6f6f;
+
+	/* darkmode */
+	--bg-color-dark: #4f4f4f;
+	--sub-bg-color-dark: #353535;
+
+	--text-color-dark: #ffffff;
+	--sub-text-color-dark: #f3f3f3;
+}
