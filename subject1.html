@@ -26,19 +26,21 @@
 		</header>
 
 		<main>
-			<!-- student information -->
+			<h2>Web App from Scratch</h2>
 			<form action="POST">
-				<!-- student information -->
-				<label for="firstname"
-					>First name
-					<input
-						type="text"
-						name="firstname"
-						id="firstname"
-						aria-required="true"
-						placeholder="First name"
-					/>
-				</label>
+				<fieldset>
+					<h3>Data about the subject</h3>
+					<label for="teachers"></label>
+						Name the first an last names of your teacher. Separate multiple teachers with a comma.
+						<input
+							type="text"
+							name="teachers"
+							id="teachers"
+							aria-required="true"
+							placeholder="Teacher 1, Teacher 2 etc."
+						/>
+					</label>
+				</fieldset>
 
 				<label for="lastname"
 					>Last name

@@ -26,6 +26,7 @@
 		</header>
 
 		<main>
+			<h2>CSS to the Rescue</h2>
 			<!-- student information -->
 			<form action="POST">
 				<!-- student information -->
