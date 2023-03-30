@@ -1,19 +1,6 @@
 /* CUSTOM COLORS */
 
 :root {
-	/* default: lightmode */
-	--bg-color: #fffffe;
-	--sub-bg-color: #faeee7;
-
-	--text-color: #33272a;
-	--sub-text-color: #594a4e;
-
-	--btn-text: #33272a;
-	--main-btn: #ff8ba7;
-	--second-btn: #ffc6c7;
-
-	--btn-hover: #6fbec9;
-
 	/* not using */
 	--valid: #c3f0ca;
 	--valid-darker: #77b380;
@@ -27,38 +14,65 @@
 	--delete-color: #ed6f6f;
 }
 
-/* darkmode */
-body:has(#color__mode:checked) {
-	/* darkmode */
-	--bg-color: #55423d;
-	--sub-bg-color: #271c19;
-
-	--text-color: #fffffe;
-	--sub-text-color: #fff3ec;
-
-	--text-btn: #271c19;
-	--main-btn: #ff8ba7;
-	--second-btn: #ffc6c7;
-
-	--btn-hover: #6fbec9;
-}
-
-/* @media screen and (prefers-color-scheme: dark) {
-	body {
-		--bg-color: var(--bg-color-dark);
-		--sub-bg-color: var(--sub-bg-color-dark);
-		--text-color: var(--text-color-dark);
-		--link-color: var(--link-color-dark);
-		--link-text: var(--link-text-dark);
-	}
-}
-
+/* based on computer: light or dark mode */
+/* dark theme */
 @media screen and (prefers-color-scheme: dark) {
-	body {
-		--bg-color: var(--bg-color);
-		--sub-bg-color: var(--sub-bg-color);
-		--text-color: var(--text-color);
-		--link-color: var(--link-color);
-		--link-text: var(--link-text);
+	:root {
+		--bg-color: #55423d;
+		--sub-bg-color: #271c19;
+
+		--text-color: #fffffe;
+		--sub-text-color: #fff3ec;
+
+		--btn-text: #271c19;
+		--main-btn: #ff8ba7;
+		--second-btn: #ffc6c7;
+
+		--btn-hover: #6fbec9;
 	}
-} */
+
+	body:has(#color__mode:checked) {
+		--bg-color: #fffffe;
+		--sub-bg-color: #faeee7;
+
+		--text-color: #33272a;
+		--sub-text-color: #594a4e;
+
+		--btn-text: #33272a;
+		--main-btn: #ff8ba7;
+		--second-btn: #ffc6c7;
+
+		--btn-hover: #6fbec9;
+	}
+}
+
+/* light theme */
+@media screen and (prefers-color-scheme: light) {
+	:root {
+		--bg-color: #fffffe;
+		--sub-bg-color: #faeee7;
+
+		--text-color: #33272a;
+		--sub-text-color: #594a4e;
+
+		--btn-text: #33272a;
+		--main-btn: #ff8ba7;
+		--second-btn: #ffc6c7;
+
+		--btn-hover: #6fbec9;
+	}
+
+	body:has(#color__mode:checked) {
+		--bg-color: #55423d;
+		--sub-bg-color: #271c19;
+
+		--text-color: #fffffe;
+		--sub-text-color: #fff3ec;
+
+		--btn-text: #271c19;
+		--main-btn: #ff8ba7;
+		--second-btn: #ffc6c7;
+
+		--btn-hover: #6fbec9;
+	}
+}
