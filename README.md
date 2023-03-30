@@ -1,16 +1,33 @@
-# Survey Minor Web Development
+# Survey Minor Web Development ✔
 
 This project is a survey for students who participated in the Minor in Web Development. The goal of this survey is to provide teachers with insight into how students experienced the minor and its different subjects.
 
 * It is important to note that this survey has no back-end and is therefore not fully functional. It is simply a concept and a project for the subject 'Browser Technologies' in the Minor in Web Development.
 
-## Problem
+## Problems
 
 - smthn about accesibility 
+- think of the features thing
 
-## Solution
+* Keyboard friendly: 
+
+* Adjusting font-size: 
+
+* Color blindness: 
+
+* Custom fonts: The reason why people usually come to your page is to see its content. A huge part of a page content is usually the text, so if the text fails to load or it takes too long to load, chances are that your users will leave the page.
+
+## Solutions
 
 - functional, reliable, usable, pleasurable
+
+* Keyboard friendly: 
+
+* Adjusting font-size: 
+
+* Color blindness: 
+
+* Custom fonts: To address the issue of text failing to load or taking too long to load, a fallback font can be used. The fallback font will load first, and once the custom font has been loaded, the browser will display the custom font. Another thing you can do is import your font with priority, so it will be one of the first things that gets imported into your projct. This just makes your website more reliable and usable to use. 
 
 ## ReadMe
 
@@ -21,11 +38,24 @@ This project is a survey for students who participated in the Minor in Web Devel
 
 ## Features
 
+* The survey is keyboard friendly. ❌
+
+* You can adjust the font-size. ❌
+
+* There is a high enough contrast. People with color blindness are able to fill in the survey. ❌
+
+* There is a light mode & a dark mode ❌
+
+* Custom font is imported with priortity ❌
+* Custom font has a fallback font, in case the font fails or takes too long to load ❌
+
+* The features work in all browsers ❌
+
 - [] Explain feature detection
 - [] think of fallbacks
 - [] features work in all browsers
 
-## User Experience
+## User experience
 
 - [] contrast / color blindness
 - [] fallback font
@@ -36,11 +66,11 @@ This project is a survey for students who participated in the Minor in Web Devel
 - [] feedback for interactive elements
 - [] look at other principles 
 
-## Progressive Enhancement ✔
+## Progressive enhancement ✔
 
 Progressive enhancement is a design approach where a website should work on all browsers and devices with all its basic functionalities. Please look at the 'core functionalities' and 'features' that are necessary for my project, specifically regarding surveys and accessibility. 
 
-## Core Functionalities of the Survey ✔
+## Core functionalities of the survey ✔
 
 Surveys are used to gain knowledge. I made a list of this survey's core functionalities to help me decide which features to add. The core functionalities of this survey are:
 
@@ -70,8 +100,20 @@ For this survey, I started with sketching out my form and thinking how I wanted 
 - [] wireflow sketch or breakdown sketch
 - [] thought about psuedo classes 
 
-# Code Explanation
+# Back-end notes
 
-# License
+This section will cover all the information that the developer working on the back-end of this survey needs to know.
+
+## Multiple submit buttons 
+
+During this survey I have multiple submit buttons, that also serve as button to go to the next or previous part of the survey. Once the user submits the first part of the form, a new document within the database is created with the information that the user filled in. 
+
+Aditionally an user ID has been created within this document. This user ID is automatically generated and unique for every user. We need this user ID so we can reference back to the same document whenever the user submits other parts of the form. 
+
+Once the user goes back to a previous part in the form, the data is taken from the database to display what the user had previously filled in. All we want to do is that the user is able to update or change this information. 
+
+# Code explanation
+
+# License ✔
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
