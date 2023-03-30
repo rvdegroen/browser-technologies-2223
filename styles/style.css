@@ -29,7 +29,7 @@ header {
 	color: var(--text-color);
 	background-color: var(--sub-bg-color);
 	transition: 0.2s ease-in-out;
-	margin-bottom: 3.5em;
+	margin-bottom: 2.5em;
 }
 
 header h1 {
@@ -69,8 +69,34 @@ header div {
 	border-radius: 0 1em 1em 0;
 }
 
-/* UL FOR PREVIOUS/NEXT BUTTONS */
-ul {
+/* form */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 1em 2em 1em;
+	gap: 0.5em;
+}
+
+form h2 {
+	margin-bottom: 1em;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.5em;
+}
+
+input {
+	margin-top: 0.5em;
+	padding: 0.5em 1em;
+	border-radius: 5em;
+	border: 0.1em var(--btn-text) solid;
+}
+
+/* FOR PREVIOUS/NEXT BUTTONS */
+.buttons {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -78,6 +104,7 @@ ul {
 	gap: 0.5em;
 	flex-wrap: wrap;
 	list-style: none;
+	margin-bottom: 2em;
 }
 
 /* previous, next button */
@@ -94,6 +121,34 @@ a {
 /* secondary a button */
 .asecondary {
 	background-color: var(--second-btn);
+}
+
+/* 	NAV */
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8em;
+	justify-content: center;
+	padding: 1em 1em 6em 1em;
+	flex: 1 1 400px;
+}
+
+nav a {
+	background-color: var(--bg-color);
+	color: var(--main-btn);
+	border-radius: 0.2em;
+	border: 1px var(--main-btn) solid;
+	max-width: 8em;
+	text-align: center;
+}
+
+nav a:hover {
+	background-color: var(--btn-text);
+}
+
+/* added to elements to style my html */
+.hidden {
+	display: none;
 }
 
 /* MEDIA QUERY */
