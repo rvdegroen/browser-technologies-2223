@@ -1,7 +1,9 @@
 /* IMPORT CSS FILES */
 @import url("./variables.css");
+@import url("./hover.css");
+@import url("./acive.css");
 
-/* GLOBAL STYLING */
+/* MOBILE FIRST */
 *,
 *::before,
 *::after {
@@ -17,16 +19,88 @@ body {
 	transition: 0.2s ease-in-out;
 }
 
-body:has(#color__mode:checked) {
-	--bg-color: var(--bg-color-dark);
-	--sub-bg-color: var(--sub-bg-color-dark);
-	--text-color: var(--text-color-dark);
-	--sub-text-color: var(--sub-text-color-dark);
+/* HEADER */
+header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 2em 1em;
+	color: var(--text-color);
+	background-color: var(--sub-bg-color);
+	transition: 0.2s ease-in-out;
+	box-shadow: var(--header-shadow);
+	margin-bottom: 3.5em;
 }
 
+header h1 {
+	margin: 1.5em 0;
+}
+
+/* parent container for color mode button */
+header div {
+	position: absolute;
+	right: 2em;
+	top: 2em;
+}
+
+/* darkmode lightmode button */
+#color__mode {
+	transition: 0.15s ease-in-out;
+	width: 3em;
+	height: 3em;
+	border-radius: 2em;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	appearance: none;
+	background-color: var(--main-btn);
+	cursor: pointer;
+}
+
+#color__mode::after {
+	width: 1em;
+	height: 2em;
+	border-radius: 2em;
+	content: "";
+	background: var(--sub-bg-color);
+	top: 15%;
+	right: 15%;
+	position: absolute;
+	border-radius: 0 1em 1em 0;
+}
+
+/* UL FOR PREVIOUS/NEXT BUTTONS */
+ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+/* previous, next button */
 a {
+	transition: 0.1s ease-in-out;
+	color: var(--main-btn-text);
+	text-decoration: none;
+	padding: 0.5em 1.5em;
+	background-color: var(--main-btn);
+	border-radius: 2em;
+	font-weight: 700;
 }
 
-submit {
-	display: hidden;
+/* secondary a button */
+.asecondary {
+	background-color: var(--second-btn);
+	color: var(--second-btn-text) !important;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 620px) {
+	header h1 {
+		margin: 1em 0;
+	}
 }

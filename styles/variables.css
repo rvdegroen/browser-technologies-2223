@@ -1,29 +1,73 @@
 /* CUSTOM COLORS */
+/* used color scheme of https://www.hostinger.com/tutorials/website-color-schemes */
 
 :root {
 	/* default: lightmode */
-	--bg-color: #f3f3f3;
+	--bg-color: #f3f2f7;
 	--sub-bg-color: #ffffff;
 
-	--text-color: #4f4f4f;
-	--sub-text-color: #a5a5a5;
+	--text-color: #2f1c6a;
+	--sub-text-color: #36344d;
 
-	/* global colors */
+	--main-btn: #6747c7;
+
+	--main-btn: #6747c7;
+	--main-btn-text: #ffffff;
+	--main-btn-hover: #453176;
+	--main-btn-hover-text: #ffffff;
+
+	--second-btn: #f0a24f;
+	--second-btn-text: #ffffff;
+	--second-btn-hover: #df7a3f;
+	--second-btn-hover-text: #ffffff;
+
+	--header-shadow: 0px 0px 20px #0c0c0c36;
+
+	/* not using */
+	--heading-text: #4f4f4f;
 	--primary-color: #41c1a5;
 	--secondary-color: #fcab61;
-
-	--quality-filled: #fcbe61;
-	--quality-not-filled: #c5c5c5;
-
+	--button-filled: #fcbe61;
+	--button-not-filled: #c5c5c5;
 	--box-shadow-blur: #00000071;
 	--selected-color: #06896c;
-
 	--delete-color: #ed6f6f;
-
-	/* darkmode */
-	--bg-color-dark: #4f4f4f;
-	--sub-bg-color-dark: #353535;
-
-	--text-color-dark: #ffffff;
-	--sub-text-color-dark: #f3f3f3;
 }
+
+/* darkmode */
+body:has(#color__mode:checked) {
+	/* default: darkmode */
+	--bg-color: #17111c;
+	--sub-bg-color: #291b36;
+
+	--text-color: #ffffff;
+	--sub-text-color: #f3f3f3;
+
+	--main-btn-hover: #ffffff;
+	--main-btn-hover-text: #6747c7;
+
+	--second-btn-hover: #ffffff;
+	--second-btn-hover-text: #f0a24f;
+
+	--header-shadow: 0px 0px 20px #0c0c0cb4;
+}
+
+/* @media screen and (prefers-color-scheme: dark) {
+	body {
+		--bg-color: var(--bg-color-dark);
+		--sub-bg-color: var(--sub-bg-color-dark);
+		--text-color: var(--text-color-dark);
+		--link-color: var(--link-color-dark);
+		--link-text: var(--link-text-dark);
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		--bg-color: var(--bg-color);
+		--sub-bg-color: var(--sub-bg-color);
+		--text-color: var(--text-color);
+		--link-color: var(--link-color);
+		--link-text: var(--link-text);
+	}
+} */

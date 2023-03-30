@@ -1,0 +1,14 @@
+/* HOVER STATES */
+#color__mode:hover {
+	background-color: var(--main-btn-hover);
+}
+
+a:hover {
+	background-color: var(--main-btn-hover);
+	color: var(--main-btn-hover-text);
+}
+
+.asecondary:hover {
+	background-color: var(--second-btn-hover);
+	color: var(--second-btn-hover-text) !important;
+}
