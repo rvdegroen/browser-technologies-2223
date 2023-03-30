@@ -34,7 +34,7 @@ header {
 }
 
 header h1 {
-	margin: 1.5em 0;
+	margin: 1.5em 0 0.5em 0;
 }
 
 /* parent container for color mode button */
@@ -101,6 +101,6 @@ a {
 /* MEDIA QUERY */
 @media (min-width: 620px) {
 	header h1 {
-		margin: 1em 0;
+		margin: 1em 0 0.5em 0;
 	}
 }
