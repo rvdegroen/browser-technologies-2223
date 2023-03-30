@@ -106,7 +106,7 @@ This section will cover all the information that the developer working on the ba
 
 ## Multiple submit buttons
 
-During this survey I have multiple submit buttons, that also serve as button to go to the next or previous part of the survey. Once the user clicks on next on the first part of the form, a new document within the database is created with the information that the user filled in. This is done with a `POST` request via the `a` tag.
+During this survey I have multiple anchor links, that also serve as submit button and to go to the next or previous part of the survey. Once the user clicks on the `a` tag with the next in it, on the first part of the form, a new document within the database is created with the information that the user filled in. This is done with a `POST` request via the `a` tag.
 
 Aditionally an user ID has been created within this document. This user ID is automatically generated and unique for every user. We need this user ID so we can reference back to the same document whenever the user submits other parts of the form with the `a` tag.
 
