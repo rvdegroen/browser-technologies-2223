@@ -33,7 +33,7 @@
 				<p>Fill out your personal information</p>
 
 				<label for="firstname"
-					>First name
+					>First name *
 					<br class="hidden" />
 					<input
 						type="text"
@@ -47,7 +47,7 @@
 				<br class="hidden" />
 
 				<label for="lastname"
-					>Last name
+					>Last name *
 					<br class="hidden" />
 					<input
 						type="text"
@@ -62,7 +62,7 @@
 				<br class="hidden" />
 
 				<label for="studentid"
-					>Student ID
+					>Student ID *
 					<br class="hidden" />
 					<input
 						type="number"
@@ -75,10 +75,21 @@
 			</form>
 			<br class="hidden" />
 			<!-- next previous buttons, that would need a POST or PUT request -->
-			<div>
+			<div class="buttons">
 				<a href="#" type="submit" rel="prev" class="asecondary">Previous</a>
-				<b class="hidden"><a href="#" rel="next">Next</a></b>
+				<a href="./html/wafs.html" rel="next">Next</a>
 			</div>
+
+			<nav>
+				<a href="#">Student Information</a>
+				<a href="#">Web App from Scratch</a>
+				<a href="#">Css to the Resque</a>
+				<a href="#">Progressive Web Apps</a>
+				<a href="#">Browser Technologies</a>
+				<a href="#">Real Time Web</a>
+				<a href="#">Human Centered Design</a>
+				<a href="#">The Final Project</a>
+			</nav>
 		</main>
 
 		<script src="./scripts/script.js" defer></script>
