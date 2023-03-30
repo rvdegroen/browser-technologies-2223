@@ -29,8 +29,11 @@
 			<!-- student information -->
 			<form action="POST">
 				<!-- student information -->
+				<h2>Student Information</h2>
+
 				<label for="firstname"
 					>First name
+					<br class="hidden" />
 					<input
 						type="text"
 						name="firstname"
@@ -38,10 +41,13 @@
 						aria-required="true"
 						placeholder="First name"
 					/>
+					<br class="hidden" />
 				</label>
+				<br class="hidden" />
 
 				<label for="lastname"
 					>Last name
+					<br class="hidden" />
 					<input
 						type="text"
 						name="lastname"
@@ -50,9 +56,13 @@
 						placeholder="Last name"
 					/>
 				</label>
+				<br class="hidden" />
+
+				<br class="hidden" />
 
 				<label for="studentid"
 					>Student ID
+					<br class="hidden" />
 					<input
 						type="number"
 						name="studentid"
@@ -62,12 +72,12 @@
 					/>
 				</label>
 			</form>
-
+			<br class="hidden" />
 			<!-- next previous buttons, that would need a POST or PUT request -->
-			<ul>
-				<li><a href="#" type="submit" rel="prev" class="asecondary">Previous</a></li>
-				<li><a href="#" rel="next">Next</a></li>
-			</ul>
+			<div>
+				<a href="#" type="submit" rel="prev" class="asecondary">Previous</a>
+				<a href="#" rel="next">Next</a>
+			</div>
 		</main>
 
 		<script src="./scripts/script.js" defer></script>
