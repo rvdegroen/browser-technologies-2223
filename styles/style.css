@@ -108,7 +108,7 @@ input {
 }
 
 /* previous, next button */
-a {
+.buttons a {
 	transition: 0.1s ease-in-out;
 	color: var(--btn-text);
 	text-decoration: none;
@@ -133,17 +133,18 @@ nav {
 	flex: 1 1 400px;
 }
 
+/* links within nav */
 nav a {
-	background-color: var(--bg-color);
 	color: var(--main-btn);
 	border-radius: 0.2em;
-	border: 1px var(--main-btn) solid;
+	border: 2px var(--main-btn) solid;
 	max-width: 8em;
 	text-align: center;
-}
-
-nav a:hover {
-	background-color: var(--btn-text);
+	text-decoration: none;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	font-weight: 700;
 }
 
 /* added to elements to style my html */
