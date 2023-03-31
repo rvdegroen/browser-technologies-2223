@@ -3,6 +3,11 @@
 	background-color: var(--btn-hover);
 }
 
-a:hover {
+.buttons a:hover {
 	background-color: var(--btn-hover);
+}
+
+nav a:hover {
+	color: var(--btn-hover);
+	border: 2px solid var(--btn-hover);
 }
