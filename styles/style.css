@@ -1,0 +1,202 @@
+/* src: https://gwfh.mranftl.com/fonts/lato?subsets=latin */
+
+/* lato-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/lato-v23-latin-regular.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/lato-v23-latin-regular.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/lato-v23-latin-regular.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/lato-v23-latin-regular.woff") format("woff"),
+		/* Modern Browsers */ url("../fonts/lato-v23-latin-regular.ttf") format("truetype"),
+		/* Safari, Android, iOS */ url("../fonts/lato-v23-latin-regular.svg#Lato") format("svg"); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/lato-v23-latin-700.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/lato-v23-latin-700.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/lato-v23-latin-700.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/lato-v23-latin-700.woff") format("woff"),
+		/* Modern Browsers */ url("../fonts/lato-v23-latin-700.ttf") format("truetype"),
+		/* Safari, Android, iOS */ url("../fonts/lato-v23-latin-700.svg#Lato") format("svg"); /* Legacy iOS */
+}
+/* lato-900 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 900;
+	src: url("../fonts/lato-v23-latin-900.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/lato-v23-latin-900.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/lato-v23-latin-900.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/lato-v23-latin-900.woff") format("woff"),
+		/* Modern Browsers */ url("../fonts/lato-v23-latin-900.ttf") format("truetype"),
+		/* Safari, Android, iOS */ url("../fonts/lato-v23-latin-900.svg#Lato") format("svg"); /* Legacy iOS */
+}
+
+:root {
+	/* light mode */
+	--heading-color: #e0e0e0;
+	--heading-button-background: #ffffff;
+	--heading-button-symbol: #4f4f4f;
+	--background-color: #f3f3f3;
+	--titel-color: #4f4f4f;
+	--sub-title-color: #d1d1d1;
+	--input-border: #d1d1d1;
+	--input-selected: #41c1a5;
+	--input-button-bg: #dcdcdc;
+	--input-button-text: #4f4f4f;
+	--input-button-bg-selected: #fcbe61;
+	--input-button-text-selected: #4f4f4f;
+	--main-button-bg: #41c1a5;
+	--main-button-text: #ffffff;
+	--pages-normal: #4f4f4f;
+	--pages-unavailable: #4f4f4f8e;
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* FOR INPUTS BELOW HEADER*/
+/* darkmode */
+body:has(#colormode:checked) {
+	/* darkmode */
+	--heading-color: #3a3a3a;
+	--heading-button-background: #5b5b5b;
+	--heading-button-symbol: #f3f3f3;
+	--background-color: #4f4f4f;
+	--titel-color: #f3f3f3;
+	--sub-title-color: #767676;
+	--input-border: #767676;
+	--pages-normal: #ffffff;
+	--pages-unavailable: #ffffff8e;
+}
+
+/* BODY STYLING */
+body {
+	background-color: var(--background-color);
+	color: var(--titel-color);
+	font-family: "Lato", sans-serif;
+}
+
+main:has(#fontsize:checked) {
+	font-size: 120%;
+}
+
+main {
+	font-size: 100%;
+}
+
+/* HEADER */
+header {
+	z-index: -1;
+	position: absolute;
+	background-color: var(--heading-color);
+	height: 3em;
+	left: 0;
+	right: 0;
+}
+
+/* ACCESIBILITY BUTTONS */
+/* background of colormode button */
+#colormode {
+	border-radius: 0.5em;
+	appearance: none;
+	background-color: var(--heading-button-background);
+	cursor: pointer;
+	z-index: 1;
+	width: 3em;
+	height: 3em;
+	box-shadow: 0 0 0.2em #00000025;
+	position: absolute;
+	top: 2em;
+	right: 10em;
+}
+
+/* grey circle on top of bg */
+#colormode::before {
+	width: 2.3em;
+	height: 2.3em;
+	border-radius: 4em;
+	content: "";
+	background: var(--heading-button-symbol);
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+
+/* white circle on top of ::before */
+#colormode::after {
+	width: 0.7em;
+	height: 1.4em;
+	border-radius: 2em;
+	content: "";
+	background: var(--heading-button-background);
+	position: absolute;
+	border-radius: 0 1em 1em 0;
+	left: 50%;
+	top: 25%;
+}
+
+/* background of fontsize button */
+#fontsize {
+	border-radius: 0.5em;
+	appearance: none;
+	background-color: var(--heading-button-background);
+	cursor: pointer;
+	z-index: 1;
+	width: 3em;
+	height: 3em;
+	box-shadow: 0 0 0.2em #00000025;
+	position: absolute;
+	top: 2em;
+	right: 15em;
+}
+
+/* clipped A character */
+#fontsize::before {
+	width: 2em;
+	height: 2em;
+	content: "";
+	background: var(--heading-button-symbol);
+	position: absolute;
+	left: 18%;
+	top: 15%;
+	clip-path: polygon(
+		65% 70%,
+		35% 70%,
+		25% 90%,
+		75% 90%,
+		50% 40%,
+		20% 100%,
+		0 100%,
+		50% 0,
+		100% 100%,
+		80% 100%
+	);
+}
+/* HIDDEN ELEMENTS WHEN CSS IS ENABLED */
+/* br and other stuff */
+.hidden {
+	display: none;
+}
+
+section {
+	font-size: 100% !important;
+}
+
+/* accesibility input labels */
+body > section:first-of-type label {
+	display: none;
+}
