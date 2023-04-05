@@ -21,7 +21,7 @@
 		--pages-unavailable: #4f4f4f8e;
 	}
 
-	body:has(#color__mode:checked) {
+	body:has(#colormode:checked) {
 		/* darkmode */
 		--heading-color: #3a3a3a;
 		--heading-button-background: #5b5b5b;
@@ -69,7 +69,7 @@
 		--main-button-text: #ffffff;
 	}
 
-	body:has(#color__mode:checked) {
+	body:has(#colormode:checked) {
 		/* light mode */
 		--heading-color: #e0e0e0;
 		--heading-button-background: #ffffff;
