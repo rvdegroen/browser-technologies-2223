@@ -41,15 +41,15 @@ Before
 
 For this form, I had a whole process. First I started out with sketches in my notebook. I looked at the requirements of the form and made sure to implement these in my sketches
 
-[Sketch1](./images/sketch1.png)
+![Sketch1](./images/sketch1.png)
 
-[Sketch2](./images/sketch2.png)
+![Sketch2](./images/sketch2.png)
 
-[Sketch3](./images/sketch3.png)
+![Sketch3](./images/sketch3.png)
 
 I also made different sketches on how to display the scale from 1 to 10.
 
-[Sketch4](./images/sketch4.png)
+![Sketch4](./images/sketch4.png)
 
 I also made different designs, some of which the contrast wasn't acceptable or the buttons didn't always look like buttons if I'd as a different student for testing.
 
@@ -57,21 +57,21 @@ These are my designs:
 
 Design 1:
 
-[design1](./images/design1.png)
+![design1](./images/design1.png)
 
-[design2](./images/design2.png)
+![design2](./images/design2.png)
 
 Design 2:
 
-[design3](./images/design3.png)
+![design3](./images/design3.png)
 
-[design4](./images/design4.png)
+![design4](./images/design4.png)
 
 My third and final design:
 
-[design5](./images/design5.png)
+![design5](./images/design5.png)
 
-[design6](./images/design6.png)
+![design6](./images/design6.png)
 
 ## Functionalities of the concept ✔
 
