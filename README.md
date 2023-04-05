@@ -67,11 +67,17 @@ Design 2:
 
 ![design4](./images/design4.png)
 
-My third and final design:
+Design 3:
 
 ![design5](./images/design5.png)
 
 ![design6](./images/design6.png)
+
+My fourth and final design:
+
+![design7](./images/design7.png)
+
+![design8](./images/design8.png)
 
 ## Functionalities of the concept ✔
 
