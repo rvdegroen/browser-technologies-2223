@@ -6,18 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="./scripts/script.js" defer></script>
 		<meta name="color-scheme" content="light dark" />
-		<!-- <link
-			rel="preload"
-			href="https://fonts.googleapis.com"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link rel="preload" href="https://fonts.gstatic.com" as="font" type="font/woff2" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
-			rel="stylesheet"
-		/> -->
 		<link rel="stylesheet" href="./styles/style.css" />
 		<title>Survey: Minor Web Development</title>
 	</head>
@@ -33,28 +21,30 @@
 		</section>
 
 		<main>
-			<form action="./html/wafs.html">
+			<form action="wafs.html" id="home">
 				<h1>Personal Information</h1>
-				<p>This survey is anonymous.</p>
+				<p>This survey is anonymous</p>
 				<fieldset>
-					<legend>When did you follow this minor?</legend>
-					<label>
-						<input type="radio" name="semester" value="semester1" />
-						Semester 1
-					</label>
-					<label>
-						<input type="radio" name="semester" value="semester2" />
-						Semester 2
-					</label>
+					<legend>When did you follow this minor? *</legend>
+					<div>
+						<label>
+							<input type="radio" name="semester" value="semester1" required />
+							<p>Semester 1</p>
+						</label>
+						<label>
+							<input type="radio" name="semester" value="semester2" checked />
+							<p>Semester 2</p>
+						</label>
+					</div>
 				</fieldset>
+				<div>
+					<button class="primary_button" type="submit" value="submit">Next</button>
+				</div>
 			</form>
-			<div>
-				<button class="primary_button" type="submit">Next</button>
-			</div>
 		</main>
 
 		<footer>
-			<h2>1/9</h2>
+			<h2>1 / 9</h2>
 		</footer>
 	</body>
 </html>
