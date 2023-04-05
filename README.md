@@ -34,6 +34,28 @@ I also made different sketches on how to display the scale from 1 to 10.
 
 [Sketch4](./images/sketch4.png)
 
+I also made different designs, some of which the contrast wasn't acceptable or the buttons didn't always look like buttons if I'd as a different student for testing.
+
+These are my designs:
+
+Design 1:
+
+[design1](./images/design1.png)
+
+[design2](./images/design2.png)
+
+Design 2:
+
+[design3](./images/design3.png)
+
+[design4](./images/design4.png)
+
+My third and final design:
+
+[design5](./images/design5.png)
+
+[design6](./images/design6.png)
+
 ## Functionalities of the concept ✔
 
 I have the following functionalities in my concept:
