@@ -183,6 +183,12 @@ Progressive enhancement is a design approach where a website should work on all 
 
 ## Pleasurable layer
 
+In this layer, the user will have the best user experience. In this layer Javascript is applied.
+
+- I added localStorage so that some things can be pre-filled when filling in a similar form like this.
+
+- I validated the form further.
+
 # Back-end notes
 
 This section will cover all the information that the developer working on the back-end of this survey needs to know.
