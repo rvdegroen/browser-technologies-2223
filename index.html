@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="./scripts/script.js" defer></script>
+		<meta name="color-scheme" content="light dark" />
 		<!-- <link
 			rel="preload"
 			href="https://fonts.googleapis.com"
@@ -30,5 +31,30 @@
 			<label for="fontsize">Increased font size</label>
 			<input name="fontsize" type="checkbox" id="fontsize" />
 		</section>
+
+		<main>
+			<form action="./html/wafs.html">
+				<h1>Personal Information</h1>
+				<p>This survey is anonymous.</p>
+				<fieldset>
+					<legend>When did you follow this minor?</legend>
+					<label>
+						<input type="radio" name="semester" value="semester1" />
+						Semester 1
+					</label>
+					<label>
+						<input type="radio" name="semester" value="semester2" />
+						Semester 2
+					</label>
+				</fieldset>
+			</form>
+			<div>
+				<button class="primary_button" type="submit">Next</button>
+			</div>
+		</main>
+
+		<footer>
+			<h2>1/9</h2>
+		</footer>
 	</body>
 </html>
