@@ -1,0 +1,73 @@
+/* FORM STYLING */
+/* sub title */
+p {
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+/* form parent */
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 3.5em 1em 0 1em;
+	padding: 1em;
+}
+
+h1 {
+	padding-bottom: 0.5em;
+}
+
+/* within the form */
+fieldset {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+}
+
+/* within the fieldset */
+
+/* questions */
+legend {
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+
+/* parent element of labels within fieldsets */
+fieldset > div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	width: 100%;
+}
+
+label {
+	cursor: pointer;
+	flex: 1;
+}
+
+/* RADIO BUTTONS  */
+
+input[type="radio"] {
+	appearance: none;
+	position: absolute;
+}
+
+input[type="radio"] + p {
+	background: var(--background-color);
+	border: solid 4px var(--heading-button-symbol);
+	border-radius: 0.4em;
+	font-weight: 700;
+	padding: 0.5em 1em;
+	margin: 0;
+}
+
+input[type="radio"] + p:hover {
+	opacity: 70%;
+}
+
+/* when radio button is checked */
+input:checked + p {
+	background-color: var(--input-button-bg-selected);
+	border: solid 4px var(--main-button-bg);
+}
