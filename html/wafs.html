@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="../scripts/script.js" defer></script>
+		<meta name="color-scheme" content="light dark" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<title>Survey: Minor Web Development</title>
+	</head>
+	<body>
+		<header></header>
+		<!-- buttons for accesibility -->
+		<section>
+			<p class="hidden">These checkboxes are only available when CSS is enabled.</p>
+			<label for="colormode">Dark or light mode </label>
+			<input name="colormode" type="checkbox" id="colormode" />
+			<label for="fontsize">Increased font size</label>
+			<input name="fontsize" type="checkbox" id="fontsize" />
+		</section>
+
+		<main>
+			<form action="./html/cttr.html" id="wafs">
+				<h1>Personal Information</h1>
+				<p>This survey is anonymous</p>
+				<fieldset>
+					<legend>When did you do this minor? *</legend>
+					<div>
+						<label>
+							<input type="radio" name="semester" value="semester1" required />
+							<p>Semester 1</p>
+						</label>
+						<label>
+							<input type="radio" name="semester" value="semester2" checked />
+							<p>Semester 2</p>
+						</label>
+					</div>
+				</fieldset>
+				<br class="hidden" />
+				<div>
+					<button class="primary_button" type="submit" value="submit">Next</button>
+				</div>
+			</form>
+		</main>
+
+		<footer>
+			<h2>1 / 9</h2>
+		</footer>
+	</body>
+</html>
