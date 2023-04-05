@@ -12,6 +12,23 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 # Table of Contents
 
+- [Concept](#concept)
+  - [Process](#process)
+  - [Functionalities of the concept ✔](#functionalities-of-the-concept--)
+- [Core functionalities of the survey ✔](#core-functionalities-of-the-survey--)
+- [Criteria of this project](#criteria-of-this-project)
+- [Testing](#testing)
+  - [Browsers](#browsers)
+- [Reliable, Usable & Pleasurable](#reliable--usable---pleasurable)
+  - [Reliable layer ✔](#reliable-layer--)
+  - [Usable layer](#usable-layer)
+  - [Pleasurable layer](#pleasurable-layer)
+- [Back-end notes](#back-end-notes)
+  - [Multiple submit buttons](#multiple-submit-buttons)
+- [Reflection](#reflection)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # Concept
 
 Link of my live demo: https://rvdegroen.github.io/browser-technologies-2223/
