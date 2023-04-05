@@ -1,4 +1,4 @@
-# Survey Minor Web Development ✔
+# Survey Minor Web Development
 
 The internet is a global resource that should be accessible to everyone, regardless of their device or abilities. Unfortunately not all websites are always accesible. This subject, Browser Technologies, is all about creating inclusive and robust websites that work for all users.
 
@@ -6,26 +6,26 @@ This project is a survey for students who participated in the Minor in Web Devel
 
 It is important to note that this survey does not have a backend and is not fully functional. It is merely a concept and a project developed as part of the Browser Technologies subject in the Minor in Web Development.
 
-# License ✔
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 # Table of Contents
 
 - [Concept](#concept)
-  - [Process](#process)
-  - [Functionalities of the concept ✔](#functionalities-of-the-concept--)
-- [Core functionalities of the survey ✔](#core-functionalities-of-the-survey--)
-- [Criteria of this project](#criteria-of-this-project)
+  - [Process](#process) ✔
+  - [Functionalities of the concept](#functionalities-of-the-concept--) ✔
+- [Core functionalities of the survey](#core-functionalities-of-the-survey--) ✔
+- [Criteria of this project](#criteria-of-this-project) ✔
 - [Testing](#testing)
   - [Browsers](#browsers)
-- [Reliable, Usable & Pleasurable](#reliable--usable---pleasurable)
-  - [Reliable layer ✔](#reliable-layer--)
-  - [Usable layer](#usable-layer)
-  - [Pleasurable layer](#pleasurable-layer)
-- [Back-end notes](#back-end-notes)
+- [Reliable, Usable & Pleasurable](#reliable--usable---pleasurable) ✔
+  - [Reliable layer](#reliable-layer--) ✔
+  - [Usable layer](#usable-layer) ✔
+  - [Pleasurable layer](#pleasurable-layer) ✔
+- [Back-end notes](#back-end-notes) ✔
   - [Multiple submit buttons](#multiple-submit-buttons)
-- [Reflection](#reflection)
+- [Reflection](#reflection) ✔
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -110,7 +110,7 @@ I have the following functionalities in my concept:
 
    - I also have improved form validation with Javascript.
 
-# Core functionalities of the survey ✔
+# Core functionalities of the survey
 
 Surveys are used to gain knowledge. I made a list of this survey's core functionalities to help me decide which features to add. The core functionalities of this survey are:
 
