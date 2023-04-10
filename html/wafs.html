@@ -21,24 +21,29 @@
 		</section>
 
 		<main>
-			<form action="./html/cttr.html" id="wafs">
-				<h1>Personal Information</h1>
-				<p>This survey is anonymous</p>
+			<form action="./cttr.html" id="wafs">
+				<h1>Web App from Scratch</h1>
+				<p>Teachers: Vasilis Gemert & Sanne 't Hoofd</p>
 				<fieldset>
-					<legend>When did you do this minor? *</legend>
+					<legend>How much would you rate Web App from Scratch? *</legend>
 					<div>
 						<label>
 							<input type="radio" name="semester" value="semester1" required />
-							<p>Semester 1</p>
+							<span>Semester 1</span>
 						</label>
 						<label>
 							<input type="radio" name="semester" value="semester2" checked />
-							<p>Semester 2</p>
+							<span>Semester 2</span>
 						</label>
 					</div>
 				</fieldset>
+				<fieldset>
+					<legend>Could you explain why you gave this subject this rating?</legend>
+					<input type="text" />
+				</fieldset>
 				<br class="hidden" />
 				<div>
+					<button class="tertiary_button">Previous</button>
 					<button class="primary_button" type="submit" value="submit">Next</button>
 				</div>
 			</form>

@@ -5,14 +5,6 @@ p {
 	margin-bottom: 1em;
 }
 
-/* form parent */
-main {
-	display: flex;
-	flex-direction: column;
-	margin: 3.5em 1em 0 1em;
-	padding: 1em;
-}
-
 h1 {
 	padding-bottom: 0.5em;
 }
@@ -44,6 +36,11 @@ fieldset > div {
 label {
 	cursor: pointer;
 	flex: 1;
+	margin-bottom: 0.3em;
+}
+
+label:nth-child(2) {
+	margin-bottom: 1.5em;
 }
 
 /* RADIO BUTTONS  */
@@ -53,21 +50,27 @@ input[type="radio"] {
 	position: absolute;
 }
 
-input[type="radio"] + p {
+input[type="radio"] + span {
+	display: block;
 	background: var(--background-color);
 	border: solid 4px var(--heading-button-symbol);
 	border-radius: 0.4em;
 	font-weight: 700;
 	padding: 0.5em 1em;
-	margin: 0;
+	transition: 0.1s ease-in-out;
 }
 
-input[type="radio"] + p:hover {
+input[type="radio"] + span:hover {
 	opacity: 70%;
+	transition: 0.2s ease-in-out;
 }
 
 /* when radio button is checked */
-input:checked + p {
+input:checked + span {
 	background-color: var(--input-button-bg-selected);
 	border: solid 4px var(--main-button-bg);
+}
+
+input[type="text"] {
+	padding: 0.5em 1em;
 }
