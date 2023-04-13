@@ -3,6 +3,7 @@
 @import url(./variables.css);
 @import url(./buttons.css);
 @import url(./form.css);
+@import url(./media.css);
 @import url(./colorscheme.css);
 
 *,
@@ -11,6 +12,17 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+/* BODY STYLING */
+body {
+	background-color: var(--background-color);
+	color: var(--titel-color);
+	font-family: "Lato", sans-serif;
+	font-size: 100%;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	transition: 0.2s ease-in-out;
 }
 
 /* HEADER */
@@ -25,15 +37,27 @@ header {
 	transition: 0.2s ease-in-out;
 }
 
-/* BODY STYLING */
-body {
-	background-color: var(--background-color);
-	color: var(--titel-color);
-	font-family: "Lato", sans-serif;
+/* sub title */
+p {
+	font-weight: 400;
+	margin-bottom: 1.2em;
+}
+
+h1 {
+	padding-bottom: 0.5em;
+}
+
+h2 {
 	font-size: 100%;
-	font-weight: 700;
-	letter-spacing: 0.5px;
-	transition: 0.2s ease-in-out;
+	opacity: 80%;
+	padding-bottom: 1.8em;
+}
+
+/* h2 for page number */
+.page {
+	opacity: 100%;
+	padding: none;
+	font-size: 130%;
 }
 
 /* form parent */

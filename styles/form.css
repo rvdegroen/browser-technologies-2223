@@ -1,35 +1,23 @@
 /* FORM STYLING */
-/* sub title */
-p {
-	font-weight: 400;
-	margin-bottom: 1em;
-}
-
-h1 {
-	padding-bottom: 0.5em;
-}
 
 /* within the form */
 fieldset {
 	border: none;
-	display: flex;
-	flex-direction: row;
-	gap: 0.5em;
 }
 
 /* within the fieldset */
 
 /* questions */
 legend {
-	margin-bottom: 1em;
+	margin-bottom: 1.2em;
 	font-size: 1.2em;
+	line-height: 1.5em;
 }
 
 /* parent element of labels within fieldsets */
 fieldset > div {
 	display: flex;
-	flex-direction: column;
-	gap: 0.5em;
+	gap: 1em;
 	width: 100%;
 }
 
@@ -58,6 +46,7 @@ input[type="radio"] + span {
 	font-weight: 700;
 	padding: 0.5em 1em;
 	transition: 0.1s ease-in-out;
+	text-align: center;
 }
 
 input[type="radio"] + span:hover {
