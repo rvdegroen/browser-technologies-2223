@@ -49,8 +49,18 @@ input[type="radio"] + span {
 	text-align: center;
 }
 
+.scale {
+	margin-bottom: 1.2em;
+	display: flex;
+}
+
 .scale input[type="radio"] + span {
-	padding: none !important;
+	padding: 0;
+	width: 2.5em;
+	height: 2.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 input[type="radio"] + span:hover {
