@@ -49,6 +49,10 @@ input[type="radio"] + span {
 	text-align: center;
 }
 
+.scale input[type="radio"] + span {
+	padding: none !important;
+}
+
 input[type="radio"] + span:hover {
 	opacity: 70%;
 	transition: 0.2s ease-in-out;
