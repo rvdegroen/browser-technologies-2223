@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="../scripts/script.js" defer></script>
+		<script src="./scripts/script.js" defer></script>
 		<meta name="color-scheme" content="light dark" />
 		<link rel="stylesheet" href="../styles/style.css" />
 		<title>Survey: Minor Web Development</title>
@@ -21,25 +21,54 @@
 		</section>
 
 		<main>
-			<form action="./cttr.html" id="wafs">
+			<form action="./html/wafs.html" id="home">
 				<h1>Web App from Scratch</h1>
-				<p>Teachers: Vasilis Gemert & Sanne 't Hoofd</p>
+				<h2>Profressors: Robert Spier & Joost Faber</h2>
 				<fieldset>
-					<legend>How much would you rate Web App from Scratch? *</legend>
-					<div>
+					<legend>How much did you enjoy the subject? *</legend>
+					<div class="buttons scale">
 						<label>
-							<input type="radio" name="semester" value="semester1" required />
-							<span>Semester 1</span>
+							<input type="radio" name="enjoy" value="1" required />
+							<span>1</span>
+						</label>
+						<br class="hidden" />
+						<label>
+							<input type="radio" name="enjoy" value="2" />
+							<span>2</span>
 						</label>
 						<label>
-							<input type="radio" name="semester" value="semester2" checked />
-							<span>Semester 2</span>
+							<input type="radio" name="enjoy" value="3" />
+							<span>3</span>
+						</label>
+						<label>
+							<input type="radio" name="enjoy" value="4" />
+							<span>4</span>
+						</label>
+						<label>
+							<input type="radio" name="enjoy" value="5" checked />
+							<span>5</span>
+						</label>
+						<label>
+							<input type="radio" name="enjoy" value="6" />
+							<span>6</span>
+						</label>
+						<label>
+							<input type="radio" name="enjoy" value="7" />
+							<span>7</span>
+						</label>
+						<label>
+							<input type="radio" name="enjoy" value="8" />
+							<span>8</span>
+						</label>
+						<label>
+							<input type="radio" name="enjoy" value="9" />
+							<span>9</span>
+						</label>
+						<label>
+							<input type="radio" name="enjoy" value="10" />
+							<span>10</span>
 						</label>
 					</div>
-				</fieldset>
-				<fieldset>
-					<legend>Could you explain why you gave this subject this rating?</legend>
-					<input type="text" />
 				</fieldset>
 				<br class="hidden" />
 				<fieldset>
@@ -54,14 +83,14 @@
 				</fieldset>
 				<br class="hidden" />
 				<div>
-					<button class="tertiary_button">Previous</button>
+					<a href="../index.html" class="tertiary_button">Previous</a>
 					<button class="primary_button" type="submit" value="submit">Next</button>
 				</div>
 			</form>
 		</main>
 
 		<footer>
-			<h2>1 / 9</h2>
+			<h2 class="page">2 / 9</h2>
 		</footer>
 	</body>
 </html>
