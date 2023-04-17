@@ -37,6 +37,16 @@ header {
 	transition: 0.2s ease-in-out;
 }
 
+/* form parent */
+main {
+	display: flex;
+	flex-direction: column;
+	/* margin: 3.5em 1em 0 1em; */
+	padding: 1em;
+	max-width: 30em;
+	margin: 3.5em auto;
+}
+
 /* sub title */
 p {
 	font-weight: 400;
@@ -50,7 +60,7 @@ h1 {
 h2 {
 	font-size: 100%;
 	opacity: 80%;
-	padding-bottom: 1.8em;
+	padding-bottom: 2.2em;
 }
 
 /* h2 for page number */
@@ -58,16 +68,6 @@ h2 {
 	opacity: 100%;
 	padding: none;
 	font-size: 130%;
-}
-
-/* form parent */
-main {
-	display: flex;
-	flex-direction: column;
-	/* margin: 3.5em 1em 0 1em; */
-	padding: 1em;
-	max-width: 30em;
-	margin: 3.5em auto;
 }
 
 /* HIDDEN ELEMENTS WHEN CSS IS ENABLED */
