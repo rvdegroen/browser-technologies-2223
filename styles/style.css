@@ -2,9 +2,11 @@
 @import url(./fonts.css);
 @import url(./variables.css);
 @import url(./buttons.css);
-@import url(./form.css);
+@import url(./personalinfo.css);
 @import url(./media.css);
 @import url(./colorscheme.css);
+@import url(./accesibility.css);
+@import url(./subjects.css);
 
 *,
 *::before,
@@ -63,6 +65,18 @@ h2 {
 	padding-bottom: 2.2em;
 }
 
+/* accesibility input labels */
+body > section:first-of-type label {
+	display: none;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
 /* h2 for page number */
 .page {
 	opacity: 100%;
@@ -74,16 +88,4 @@ h2 {
 /* br and other stuff */
 .hidden {
 	display: none;
-}
-
-/* accesibility input labels */
-body > section:first-of-type label {
-	display: none;
-}
-
-/* FOOTER */
-
-footer {
-	display: flex;
-	justify-content: center;
 }

@@ -80,6 +80,11 @@ input[type="radio"] + span {
 	text-align: center;
 }
 
+.buttons.scale {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 /* scale radio buttons */
 .scale {
 	margin-bottom: 2.2em;

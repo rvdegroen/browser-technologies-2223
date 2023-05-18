@@ -1,0 +1,98 @@
+/* ACCESIBILITY BUTTONS */
+/* darkmode button*/
+body:has(#colormode:checked) {
+	/* darkmode */
+	--heading-color: #3a3a3a;
+	--heading-button-background: #5b5b5b;
+	--heading-button-symbol: #ffffff;
+	--background-color: #292929;
+	--titel-color: #ffffff;
+	--sub-title-color: #ffffff;
+	--input-border: #767676;
+	--pages-normal: #ffffff;
+	--pages-unavailable: #ffffff8e;
+	--input-button-border: #f3f3f3;
+}
+
+/* background of colormode button */
+#colormode {
+	border-radius: 0.5em;
+	appearance: none;
+	background-color: var(--heading-button-background);
+	cursor: pointer;
+	z-index: 1;
+	width: 3em;
+	height: 3em;
+	box-shadow: 0 0 0.2em #00000060;
+	position: absolute;
+	top: 2em;
+	right: 2em;
+}
+
+/* grey circle on top of bg */
+#colormode::before {
+	width: 2.3em;
+	height: 2.3em;
+	border-radius: 4em;
+	content: "";
+	background: var(--heading-button-symbol);
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+
+/* white circle on top of ::before */
+#colormode::after {
+	width: 0.7em;
+	height: 1.4em;
+	border-radius: 2em;
+	content: "";
+	background: var(--heading-button-background);
+	position: absolute;
+	border-radius: 0 1em 1em 0;
+	left: 50%;
+	top: 25%;
+}
+
+/* fontsize button: to increase font-size */
+body:has(#fontsize:checked) {
+	font-size: 120%;
+}
+
+/* background of fontsize button */
+#fontsize {
+	border-radius: 0.5em;
+	appearance: none;
+	background-color: var(--heading-button-background);
+	cursor: pointer;
+	z-index: 1;
+	width: 3em;
+	height: 3em;
+	box-shadow: 0 0 0.2em #00000060;
+	position: absolute;
+	top: 2em;
+	right: 6em;
+}
+
+/* fontsize button: character A clipped*/
+#fontsize::before {
+	width: 2em;
+	height: 2em;
+	content: "";
+	background: var(--heading-button-symbol);
+	position: absolute;
+	left: 18%;
+	top: 15%;
+	clip-path: polygon(
+		65% 70%,
+		35% 70%,
+		25% 90%,
+		75% 90%,
+		50% 40%,
+		20% 100%,
+		0 100%,
+		50% 0,
+		100% 100%,
+		80% 100%
+	);
+}
