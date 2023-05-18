@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: var(--bg-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #55423d;
+		--sub-bg-color: #271c19;
+
+		--text-color: #fffffe;
+		--sub-text-color: #fff3ec;
+
+		--btn-text: #271c19;
+		--main-btn: #ff8ba7;
+		--second-btn: #ffc6c7;
+
+		--btn-hover: #6fbec9;
+	}
+}
