@@ -4,15 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=	, initial-scale=1.0" />
+		<!-- color-scheme -->
 		<meta name="color-scheme" content="light dark" />
-		<!-- font: lato 300 (light), 400 (regular), 700 (bold) -->
+		<!-- css -->
+		<link rel="stylesheet" href="./styles/style.css" />
+		<!-- fonts: lato 300 (light), 400 (regular), 700 (bold) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./styles/style.css" />
 		<title>Minor Web Development Enquête</title>
 	</head>
 
@@ -22,7 +24,7 @@
 				<h1>Minor Web-Dev Enquête</h1>
 			</div>
 			<nav>
-				<input type="checkbox" id="darkmode" />
+				<input type="checkbox" id="colormode" />
 				<input type="checkbox" id="textmode" />
 				<a href="./index-english.html">English</a>
 			</nav>
@@ -31,7 +33,53 @@
 		<main>
 			<!-- student information -->
 			<form action="POST">
-				<h2>Persoonlijke Informatie</h2>
+				<fieldset>
+					<h2>Persoonlijke Informatie</h2>
+					<p>We hebben altijd je gegevens nodig om te weten of je echt een persoon bent</p>
+					<label>
+						Voornaam
+						<input
+							type="text"
+							name="firstname"
+							id="firstname"
+							placeholder="Voornaam"
+							aria-placeholder="Vul je voornaam in"
+							required
+						/>
+					</label>
+
+					<label>
+						Achternaam
+						<input
+							type="text"
+							name="surname"
+							id="surname"
+							placeholder="Achternaam"
+							aria-placeholder="Vul je achternaam in"
+							required
+						/>
+					</label>
+
+					<label>
+						E-mail
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Voorbeeld@gmail.com"
+							aria-placeholder="Vul je e-mail in"
+							required
+						/>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<h2>Privacy</h2>
+					<p>Jouw gegevens blijven verborgen als je anoniem wilt blijven</p>
+					<label> Ik wil anoniem blijven <input type="checkbox" /></label>
+				</fieldset>
+
+				<button type="submit">Volgende</button>
 			</form>
 		</main>
 	</body>
