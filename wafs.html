@@ -7,7 +7,7 @@
 		<!-- color-scheme -->
 		<meta name="color-scheme" content="light dark" />
 		<!-- css -->
-		<link rel="stylesheet" href="./styles/style.css" />
+		<!-- <link rel="stylesheet" href="./styles/style.css" /> -->
 		<!-- fonts: lato 300 (light), 400 (regular), 700 (bold) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +20,13 @@
 
 	<body>
 		<header>
+			<br class="hidden" />
 			<div>
 				<h1>Minor Web-Dev Enquête</h1>
 			</div>
 
-			<br class="hidden" />
-
 			<nav>
-				<p class="hidden">Deze functionaliteiten doen het alleen als CSS aan staat.</p>
+				<p class="hidden"><em>Deze functionaliteiten doen het alleen als CSS aan staat:</em></p>
 				<label for="colormode" class="hidden">Dark-/Light mode</label>
 				<input type="checkbox" id="colormode" name="colormode" />
 				<label for="textmode" class="hidden">Increase Text Size</label>
@@ -40,71 +39,91 @@
 			<!-- subject information -->
 			<form action="./cssttr.html">
 				<section>
-					<h2>Vak: Web App from Scratch</h2>
+					<h2>Vak Web App from Scratch</h2>
 					<p>
 						De docenten voor dit vak waren <strong class="hidden">Robert Spier</strong> &
 						<strong class="hidden">Joost Faber</strong>.
 					</p>
 				</section>
-				<br class="hidden" />
 
 				<section>
-					<h3>Tijdens het vak:</h3>
+					<h3>Tijdens het vak</h3>
 					<br class="hidden" />
 					<fieldset>
 						<legend>Wat voor cijfer zou je dit vak geven? *</legend>
 
 						<br class="hidden" />
 
-						<p>
-							<span>Heel slecht</span>
-							<span class="hidden">&nbsp &nbsp &nbsp &nbsp &nbsp</span>
-							<span>Net goed</span>
-							<span class="hidden">&nbsp &nbsp &nbsp &nbsp &nbsp</span>
-							<span>Heel slecht</span>
-						</p>
-						<div>
-							<label>
-								<input type="radio" name="subject_rating" value="1" required />
-								<span>1</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="2" />
-								<span>2</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="3" />
-								<span>3</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="4" />
-								<span>4</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="5" checked />
-								<span>5</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="6" />
-								<span>6</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="7" />
-								<span>7</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="8" />
-								<span>8</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="9" />
-								<span>9</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="10" />
-								<span>10</span>
-							</label>
-						</div>
+						<table>
+							<tr>
+								<td colspan="3" align="start">Heel slecht</td>
+								<td colspan="4" align="middle">Net goed</td>
+								<td colspan="3" align="end">Heel goed</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="1" required />
+										<span>1</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="2" />
+										<span>2</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="3" />
+										<span>3</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="4" />
+										<span>4</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="5" checked />
+										<span>5</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="6" />
+										<span>6</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="7" />
+										<span>7</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="8" />
+										<span>8</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="9" />
+										<span>9</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_rating" value="10" />
+										<span>10</span>
+									</label>
+								</td>
+							</tr>
+						</table>
 
 						<br class="hidden" />
 					</fieldset>
@@ -115,56 +134,76 @@
 						<legend>Hoe duidelijk vond je de uitleg? *</legend>
 
 						<br class="hidden" />
+						<table>
+							<tr>
+								<td colspan="3" align="start">Heel slecht</td>
+								<td colspan="4" align="middle">Net goed</td>
+								<td colspan="3" align="end">Heel goed</td>
+							</tr>
+							<tr>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="1" required />
+										<span>1</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="2" />
+										<span>2</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="3" />
+										<span>3</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="4" />
+										<span>4</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="5" checked />
+										<span>5</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="6" />
+										<span>6</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="7" />
+										<span>7</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="8" />
+										<span>8</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="9" />
+										<span>9</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_explanation" value="10" />
+										<span>10</span>
+									</label>
+								</td>
+							</tr>
+						</table>
 
-						<p>
-							<span>Heel slecht</span>
-							<span class="hidden">&nbsp &nbsp &nbsp &nbsp &nbsp</span>
-							<span>Net goed</span>
-							<span class="hidden">&nbsp &nbsp &nbsp &nbsp &nbsp</span>
-							<span>Heel slecht</span>
-						</p>
-						<div>
-							<label>
-								<input type="radio" name="subject_explanation" value="1" required />
-								<span>1</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="2" />
-								<span>2</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="3" />
-								<span>3</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="4" />
-								<span>4</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="5" checked />
-								<span>5</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="6" />
-								<span>6</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="7" />
-								<span>7</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="8" />
-								<span>8</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_rating" value="9" />
-								<span>9</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_explanation" value="10" />
-								<span>10</span>
-							</label>
-						</div>
 						<br class="hidden" />
 					</fieldset>
 
@@ -175,63 +214,84 @@
 
 						<br class="hidden" />
 
-						<p>
-							<span>Heel makkelijk</span>
-							<span class="hidden">&nbsp &nbsp</span>
-							<span>Net goed</span>
-							<span class="hidden">&nbsp &nbsp &nbsp &nbsp</span>
-							<span>Heel moeilijk</span>
-						</p>
-						<div>
-							<label>
-								<input type="radio" name="subject_difficulty" value="1" required />
-								<span>1</span>
-							</label>
+						<table>
+							<tr>
+								<td colspan="3" align="start">Heel makkelijk</td>
+								<td colspan="4" align="middle">Net goed</td>
+								<td colspan="3" align="end">Heel moeilijk</td>
+							</tr>
 
-							<label>
-								<input type="radio" name="subject_difficulty" value="2" />
-								<span>2</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="3" />
-								<span>3</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="4" />
-								<span>4</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="5" checked />
-								<span>5</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="6" />
-								<span>6</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="7" />
-								<span>7</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="8" />
-								<span>8</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="9" />
-								<span>9</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_difficulty" value="10" />
-								<span>10</span>
-							</label>
-						</div>
+							<tr>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="1" required />
+										<span>1</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="2" />
+										<span>2</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="3" />
+										<span>3</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="4" />
+										<span>4</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="5" checked />
+										<span>5</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="6" />
+										<span>6</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="7" />
+										<span>7</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="8" />
+										<span>8</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="9" />
+										<span>9</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_difficulty" value="10" />
+										<span>10</span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<br class="hidden" />
 					</fieldset>
 
 					<br class="hidden" />
 				</section>
 
 				<section>
-					<h3>Ter reflectie:</h3>
+					<h3>Reflectie</h3>
 
 					<br class="hidden" />
 
@@ -240,56 +300,77 @@
 
 						<br class="hidden" />
 
-						<!-- I want this inline for above the scale of radio buttons when using html only -->
-						<p>
-							<span>Heel slecht</span>
-							<span class="hidden">&nbsp &nbsp &nbsp &nbsp &nbsp</span>
-							<span>Net goed</span>
-							<span class="hidden">&nbsp &nbsp &nbsp &nbsp &nbsp</span>
-							<span>Heel slecht</span>
-						</p>
-						<div>
-							<label>
-								<input type="radio" name="subject_understanding" value="1" required />
-								<span>1</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="2" />
-								<span>2</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="3" />
-								<span>3</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="4" />
-								<span>4</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="5" checked />
-								<span>5</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="6" />
-								<span>6</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="7" />
-								<span>7</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="8" />
-								<span>8</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="9" />
-								<span>9</span>
-							</label>
-							<label>
-								<input type="radio" name="subject_understanding" value="10" />
-								<span>10</span>
-							</label>
-						</div>
+						<table>
+							<tr>
+								<td colspan="3" align="start">Heel slecht</td>
+								<td colspan="4" align="middle">Net goed</td>
+								<td colspan="3" align="end">Heel goed</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="1" required />
+										<span>1</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="2" />
+										<span>2</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="3" />
+										<span>3</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="4" />
+										<span>4</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="5" checked />
+										<span>5</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="6" />
+										<span>6</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="7" />
+										<span>7</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="8" />
+										<span>8</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="9" />
+										<span>9</span>
+									</label>
+								</td>
+								<td>
+									<label>
+										<input type="radio" name="subject_reflection" value="10" />
+										<span>10</span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<br class="hidden" />
 					</fieldset>
 
 					<br class="hidden" />
@@ -297,17 +378,27 @@
 
 				<br class="hidden" />
 
-				<fieldset>
-					<br class="hidden" />
-
-					<label>
-						Wat kan beter? <em>(optioneel)</em>
-						<input type="textarea" />
-					</label>
+				<section>
+					<h3>Opmerkingen</h3>
 
 					<br class="hidden" />
-					<br class="hidden" />
-				</fieldset>
+
+					<fieldset>
+						<br class="hidden" />
+
+						<label>
+							Wat kan beter? <em>(optioneel)</em>
+							<input
+								type="textarea"
+								placeholder="Opmerking"
+								aria-placeholder="Typ je opmerkingen"
+							/>
+						</label>
+
+						<br class="hidden" />
+						<br class="hidden" />
+					</fieldset>
+				</section>
 
 				<br class="hidden" />
 
