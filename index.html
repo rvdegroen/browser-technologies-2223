@@ -23,20 +23,28 @@
 			<div>
 				<h1>Minor Web-Dev Enquête</h1>
 			</div>
+
+			<br class="hidden" />
+
 			<nav>
-				<input type="checkbox" id="colormode" />
-				<input type="checkbox" id="textmode" />
+				<p class="hidden">Deze functionaliteiten doen het alleen als CSS aan staat.</p>
+				<label for="colormode" class="hidden">Dark-/Light mode</label>
+				<input type="checkbox" id="colormode" name="colormode" />
+				<label for="textmode" class="hidden">Increase Text Size</label>
+				<input type="checkbox" id="textmode" name="textmode" />
 			</nav>
 		</header>
 
 		<main>
+			<br class="hidden" />
+
 			<!-- student information -->
 			<form action="./wafs.html">
 				<fieldset>
 					<h2>Persoonlijke Informatie</h2>
-					<p>We hebben altijd je gegevens nodig om te weten of je echt een persoon bent</p>
+					<p>We hebben altijd je gegevens nodig om te weten of je echt een student bent</p>
 					<label>
-						Voornaam
+						Voornaam *
 						<input
 							type="text"
 							name="firstname"
@@ -47,8 +55,10 @@
 						/>
 					</label>
 
+					<br class="hidden" />
+
 					<label>
-						Achternaam
+						Achternaam *
 						<input
 							type="text"
 							name="surname"
@@ -59,8 +69,10 @@
 						/>
 					</label>
 
+					<br class="hidden" />
+
 					<label>
-						E-mail
+						E-mail *
 						<input
 							type="email"
 							name="email"
@@ -72,16 +84,22 @@
 					</label>
 				</fieldset>
 
+				<br class="hidden" />
+
 				<fieldset>
 					<h2>Privacy</h2>
 					<p>Jouw gegevens blijven verborgen als je anoniem wilt blijven</p>
-					<label> Ik wil anoniem blijven <input type="checkbox" /></label>
+					<label> Ik wil anoniem blijven <em>(optioneel)</em><input type="checkbox" /></label>
 				</fieldset>
+
+				<br class="hidden" />
 
 				<button type="submit">Volgende</button>
 			</form>
 		</main>
 
-		<footer>1/9</footer>
+		<br class="hidden" />
+
+		<footer><p>1/9</p></footer>
 	</body>
 </html>
