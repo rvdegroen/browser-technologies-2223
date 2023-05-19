@@ -7,7 +7,7 @@
 		<!-- color-scheme -->
 		<meta name="color-scheme" content="light dark" />
 		<!-- css -->
-		<!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+		<link rel="stylesheet" href="./styles/style.css" />
 		<!-- fonts: lato 300 (light), 400 (regular), 700 (bold) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,6 @@
 
 	<body>
 		<header>
-			<br class="hidden" />
 			<div>
 				<h1>Minor Web-Dev Enquête</h1>
 			</div>
@@ -47,6 +46,7 @@
 				</section>
 
 				<section>
+					<br class="hidden" />
 					<h3>Tijdens het vak</h3>
 					<br class="hidden" />
 					<fieldset>
@@ -125,6 +125,23 @@
 							</tr>
 						</table>
 
+						<br class="hidden" />
+
+						<label for="extra-opinion">
+							Waarom heb je dit cijfer gegeven? *
+							<br class="hidden" />
+							<br class="hidden" />
+							<textarea
+								name="extra-opinion"
+								id="extra__opinion"
+								cols="30"
+								rows="3"
+								placeholder="Opmerking"
+								aria-placeholder="Typ hier je mening"
+								required
+							></textarea>
+						</label>
+						<br class="hidden" />
 						<br class="hidden" />
 					</fieldset>
 
@@ -388,11 +405,15 @@
 
 						<label>
 							Wat kan beter? <em>(optioneel)</em>
-							<input
-								type="textarea"
+							<br class="hidden" />
+							<br class="hidden" />
+							<textarea
+								name="opinion"
+								cols="30"
+								rows="3"
 								placeholder="Opmerking"
 								aria-placeholder="Typ je opmerkingen"
-							/>
+							></textarea>
 						</label>
 
 						<br class="hidden" />
@@ -409,6 +430,6 @@
 
 		<br class="hidden" />
 
-		<footer><p>2/9</p></footer>
+		<footer><p>Stap 2/9</p></footer>
 	</body>
 </html>
