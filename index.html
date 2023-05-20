@@ -48,6 +48,7 @@
 					<p>We hebben altijd je gegevens nodig om te weten of je echt een student bent</p>
 					<label>
 						Voornaam *
+						<!-- pattern only includes uppercase and lowercase characters (also include non-ASCII letters and - and spaces) -->
 						<input
 							type="text"
 							name="firstname"
@@ -55,6 +56,7 @@
 							placeholder="Voornaam"
 							aria-placeholder="Vul je voornaam in"
 							required
+							pattern="[A-Za-z\u00EB\u00E4\u00F6\u00EF\u00EE\u00F1 -]+"
 						/>
 					</label>
 
@@ -69,6 +71,7 @@
 							placeholder="Achternaam"
 							aria-placeholder="Vul je achternaam in"
 							required
+							pattern="[A-Za-z\u00EB\u00E4\u00F6\u00EF\u00EE\u00F1 -]+"
 						/>
 					</label>
 
