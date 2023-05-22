@@ -19,24 +19,12 @@
 	</head>
 
 	<body>
-		<header>
-			<div>
-				<h1>Minor Web-Dev Enquête</h1>
-			</div>
-
-			<nav>
-				<p class="hidden"><em>Deze functionaliteiten doen het alleen als CSS aan staat:</em></p>
-				<label for="colormode" class="hidden">Dark-/Light mode</label>
-				<input type="checkbox" id="colormode" name="colormode" />
-				<label for="textmode" class="hidden">Increase Text Size</label>
-				<input type="checkbox" id="textmode" name="textmode" />
-			</nav>
-		</header>
-
 		<main>
 			<br class="hidden" />
 			<h1>Bedankt voor het invullen van deze enquête!</h1>
-			<p>We hebben jouw antwoord ontvangen.</p>
+			<p id="close_paragraph">
+				We hebben je antwoord ontvangen <span id="close_text">en je mag dit scherm sluiten</span>.
+			</p>
 		</main>
 	</body>
 </html>
