@@ -2,23 +2,72 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: var(--bg-color);
 	color: var(--text-color);
+}
+
+html,
+body {
+	height: 100%;
 }
 
 body {
 	font-family: 'Lato', sans-serif;
 	transition: 0.2s ease-in-out;
+	background-image: var(--bg-gradient);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* width: 100%; */
+	width: 35%;
+	margin: 0 auto;
+}
+
+/* h1 */
+header {
+	display: flex;
+	justify-content: center;
+	margin: 2em;
+}
+
+/* form met footer erin */
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 2em;
+	background-color: var(--bg-color);
+	box-shadow: 0 0 20px rgb(15, 44, 48);
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+fieldset > label {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 1em;
 }
 
 a {
 	text-decoration: none;
 }
 
+.hidden {
+	display: none;
+}
+
 /* colorschemes */
 @media screen and (prefers-color-scheme: light) {
 	:root {
 		/* light mode */
+		--bg-gradient: linear-gradient(to bottom right, #e76f51, #e9c46a);
 		--bg-color: #ffffff;
 		--text-color: #040301;
 		--primary-color: #f8ad62;
@@ -34,6 +83,7 @@ a {
 @media screen and (prefers-color-scheme: dark) {
 	:root {
 		/* darkmode */
+		--bg-gradient: linear-gradient(to bottom right, #263853, #2a9d8f);
 		--bg-color: #0f1b24;
 		--text-color: #ffffff;
 		--primary-color: #f8ad62;
