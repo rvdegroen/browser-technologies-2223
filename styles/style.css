@@ -1,6 +1,27 @@
 :root {
 	--button-padding: 0.6em 2em;
 	--button-radius: 0.2em;
+	/* light mode */
+	--bg-gradient: linear-gradient(to bottom right, #e76f51, #e9c46a);
+	--bg-color: #ffffff;
+	--text-color: #040301;
+	--primary-color: #f8ad62;
+	--secondary-color: #ffd2a8;
+	--accent-color: #f8ad62;
+	--button-text: #000000;
+	--input-text: #1b272f;
+	--input-text-border: #2a998d;
+	--input-text-border-active: #0bffe5;
+	--input-text-valid: #1b2f1c;
+	--input-text-border-valid: #2cab00;
+	--input-text-border-valid-active: #70ff00;
+	--input-text-fail: #2f1b1b;
+	--input-text-border-fail: #ab0000;
+	--input-text-border-fail-active: #ff0000;
+	--dark-text: #000000;
+	--legend-bg: #f8ad62;
+	--error: #ff0000;
+	--radio-bg: #523921;
 }
 
 * {
@@ -242,10 +263,10 @@ a {
 }
 
 /* colorschemes */
-@media screen and (prefers-color-scheme: light) {
-	:root {
-		/* light mode */
-		--bg-gradient: linear-gradient(to bottom right, #e76f51, #e9c46a);
+/* @media screen and (prefers-color-scheme: light) {
+	:root { */
+/* light mode */
+/* --bg-gradient: linear-gradient(to bottom right, #e76f51, #e9c46a);
 		--bg-color: #ffffff;
 		--text-color: #040301;
 		--primary-color: #f8ad62;
@@ -265,12 +286,12 @@ a {
 		--legend-bg: #f8ad62;
 		--error: #ff0000;
 		--radio-bg: #523921;
-	}
+	} */
 
-	/* body:has(#colormode:checked) {
+/* body:has(#colormode:checked) {
 		--bg-color: #0f1b24;
 	} */
-}
+/* } */
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
