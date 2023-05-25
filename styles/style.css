@@ -10,7 +10,7 @@
 	--accent-color: #f8ad62;
 	--button-text: #000000;
 	--input-text: #1b272f;
-	--input-text-border: #2a998d;
+	--input-text-border: #2a8b82;
 	--input-text-border-active: #0bffe5;
 	--input-text-valid: #1b2f1c;
 	--input-text-border-valid: #2cab00;
@@ -22,6 +22,9 @@
 	--legend-bg: #f8ad62;
 	--error: #ff0000;
 	--radio-bg: #523921;
+	--light-color: #ffffff;
+	--focus-color: #e99746;
+	--text-hover: #523921;
 }
 
 * {
@@ -72,6 +75,9 @@ main {
 	margin: 0 auto 5em auto;
 }
 
+main > p {
+}
+
 /* extra text on top of the screen underneath h2 */
 form > section > p {
 	margin-top: 1em;
@@ -89,10 +95,10 @@ fieldset {
 
 /* questions */
 fieldset > legend {
-	background-color: var(--legend-bg);
-	padding: 0.5em;
+	/* background-color: var(--legend-bg); */
+	padding: 0.2em 0;
 	border-radius: 0.2em 0.2em 0 0 !important;
-	color: var(--dark-text);
+	color: var(--light-text);
 	width: 100%;
 }
 
@@ -128,12 +134,14 @@ table > tbody {
 	width: 98%;
 }
 
+/* good / bad */
 table > tbody > tr:last-of-type {
 	display: flex;
 	justify-content: space-between;
 	margin: 0.5em 0 0.5em 0;
 }
 
+/* scale */
 table > tbody > tr:first-of-type {
 	display: flex;
 	justify-content: space-between;
@@ -227,25 +235,36 @@ input[type='radio'] + span {
 }
 
 input[type='radio'] + span:hover {
-	opacity: 70%;
+	background-color: var(--text-hover);
+	border: 1px solid var(--primary-color);
 	transition: 0.1s ease-in-out;
 }
 
 /* radio button validation */
-input:checked + span,
 input:focus + span,
-textarea:active,
 textarea:focus {
-	background-color: var(--input-text-valid);
-	border: solid 1px var(--input-text-border-valid);
+	background-color: var(--focus-color);
+	border: solid 1px var(--focus-color);
+}
+
+input:checked + span {
+	background-color: var(--input-text-border);
+	border: solid 1px var(--input-text-border);
 }
 
 /* text things validation */
+textarea:hover,
+input[type='text']:hover,
+input[type='email']:hover {
+	background-color: var(--text-hover) !important;
+	border: 1px solid var(--primary-color);
+}
+
 textarea:valid,
 input[type='text']:valid,
 input[type='email']:valid {
-	background-color: var(--input-text-valid) !important;
-	border: solid 1px var(--input-text-border-valid);
+	background-color: var(--input-text-border) !important;
+	border: solid 1px var(--input-text-border);
 }
 
 /* back button */
@@ -316,6 +335,7 @@ a {
 		--legend-bg: #5fc5b9;
 		--error: #ff0000;
 		--radio-bg: #523921;
+		--light-color: #ffffff;
 	}
 
 	/* body:has(#colormode:checked) {
