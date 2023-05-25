@@ -1,6 +1,5 @@
 const textAreas = document.querySelectorAll(`textarea`);
 const inputs = document.querySelectorAll(`input`);
-
 const elementsToSave = [...textAreas, ...inputs];
 
 for (const element of elementsToSave) {
