@@ -54,6 +54,7 @@ main {
 /* extra text on top of the screen underneath h2 */
 form > section > p {
 	margin-top: 1em;
+	font-size: 1em;
 }
 
 /* fieldset */
@@ -183,6 +184,7 @@ textarea {
 	border: 1px var(--input-text-border) solid;
 	font-size: 1em;
 	font-family: 'Lato', sans-serif;
+	outline: none;
 }
 
 /* radio buttons */
@@ -203,14 +205,35 @@ input[type='radio'] + span {
 	cursor: pointer;
 }
 
+input[type='radio'] + span:hover {
+	opacity: 70%;
+	transition: 0.1s ease-in-out;
+}
+
+/* radio button validation */
+input:checked + span,
+textarea:active,
+textarea:focus {
+	background-color: var(--input-text-valid);
+	border: solid 1px var(--input-text-border-valid);
+}
+
+/* text things validation */
+textarea:valid,
+input[type='text']:valid,
+input[type='email']:valid {
+	background-color: var(--input-text-valid) !important;
+	border: solid 1px var(--input-text-border-valid);
+}
+
 /* back button */
 a {
 	text-decoration: none;
 }
 
-/* error message */
-/* .error {
-} */
+.error {
+	color: var(--error);
+}
 
 /* hide html styling when css is on */
 .hidden {
@@ -239,6 +262,8 @@ a {
 		--input-text-border-fail-active: #ff0000;
 		--dark-text: #000000;
 		--legend-bg: #f8ad62;
+		--error: #ff0000;
+		--radio-bg: #523921;
 	}
 
 	/* body:has(#colormode:checked) {
@@ -267,6 +292,8 @@ a {
 		--input-text-border-fail-active: #ff0000;
 		--dark-text: #000000;
 		--legend-bg: #5fc5b9;
+		--error: #ff0000;
+		--radio-bg: #523921;
 	}
 
 	/* body:has(#colormode:checked) {
