@@ -211,7 +211,7 @@ input[type='radio'] + span:hover {
 }
 
 /* radio button validation */
-input:checked + span,
+input:checked + span input:focus + span,
 textarea:active,
 textarea:focus {
 	background-color: var(--input-text-valid);
