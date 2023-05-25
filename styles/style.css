@@ -9,8 +9,8 @@
 	--secondary-color: #ffd2a8;
 	--accent-color: #f8ad62;
 	--button-text: #000000;
-	--input-text: #1b272f;
-	--input-text-border: #2a8b82;
+	--input-text: rgb(253, 238, 221);
+	--input-text-border: #e48d36;
 	--input-text-border-active: #0bffe5;
 	--input-text-valid: #1b2f1c;
 	--input-text-border-valid: #2cab00;
@@ -23,8 +23,12 @@
 	--error: #ff0000;
 	--radio-bg: #523921;
 	--light-color: #ffffff;
-	--focus-color: #e99746;
-	--text-hover: #523921;
+	--focus-color: #d1873e;
+	--text-hover: #fdca9a;
+	--table-color: #ffffffa6;
+	--button-hover: #c25700;
+	--button-active: #40352a;
+	--button-hover-text: white;
 }
 
 * {
@@ -32,6 +36,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	color: var(--text-color);
+	outline: transparent;
 }
 
 body {
@@ -70,12 +75,13 @@ main {
 	padding: 2em;
 	background-color: var(--bg-color);
 	border-radius: 0.5em;
-	box-shadow: 0 0 20px rgb(15, 44, 48);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.507);
 	max-width: 95%;
 	margin: 0 auto 5em auto;
 }
 
 main > p {
+	margin-top: 1em;
 }
 
 /* extra text on top of the screen underneath h2 */
@@ -103,6 +109,7 @@ fieldset > legend {
 }
 
 textarea {
+	margin-top: 0.7em;
 	border-radius: 0 0 0.2em 0.2em;
 	width: 100%;
 }
@@ -139,6 +146,10 @@ table > tbody > tr:last-of-type {
 	display: flex;
 	justify-content: space-between;
 	margin: 0.5em 0 0.5em 0;
+}
+
+table > tbody > tr:last-of-type > td {
+	color: var(--table-color);
 }
 
 /* scale */
@@ -234,15 +245,62 @@ input[type='radio'] + span {
 	cursor: pointer;
 }
 
-input[type='radio'] + span:hover {
-	background-color: var(--text-hover);
+/* psuedo classes */
+
+/* hovers */
+
+input[type='radio'] + span:hover,
+textarea:hover,
+input[type='text']:hover,
+input[type='email']:hover {
+	background-color: var(--text-hover) !important;
 	border: 1px solid var(--primary-color);
 	transition: 0.1s ease-in-out;
 }
 
-/* radio button validation */
-input:focus + span,
-textarea:focus {
+/* previous button */
+/* next button */
+form > div:last-of-type > a:hover,
+form > div:last-of-type > .button:hover,
+form > div:last-of-type > button:hover {
+	background-color: var(--button-hover);
+	color: var(--button-hover-text);
+	transition: ease-in-out 0.2s;
+}
+
+/* focus keyboard */
+input[type='radio']:focus + span,
+textarea:focus,
+input[type='text']:focus,
+input[type='email']:focus {
+	background-color: var(--input-text);
+	border: 1px solid var(--primary-color);
+}
+
+/* invalid */
+input[type='radio']:focus:invalid + span,
+input[type='text']:focus:invalid,
+input[type='email']:focus:invalid {
+	background-color: red !important;
+}
+
+/* checked,valid */
+input[type='radio']:checked + span,
+textarea:valid,
+input[type='text']:valid,
+input[type='email']:valid {
+	background-color: var(--input-text-border) !important;
+}
+
+input[type='text']::after,
+input[type='email']::after {
+	content: 'it works';
+	color: white !important;
+}
+
+/* input:focus + span,
+input[type='text']:focus,
+input[type='email']:focus {
 	background-color: var(--focus-color);
 	border: solid 1px var(--focus-color);
 }
@@ -252,7 +310,7 @@ input:checked + span {
 	border: solid 1px var(--input-text-border);
 }
 
-/* text things validation */
+textarea:focus,
 textarea:hover,
 input[type='text']:hover,
 input[type='email']:hover {
@@ -265,6 +323,10 @@ input[type='text']:valid,
 input[type='email']:valid {
 	background-color: var(--input-text-border) !important;
 	border: solid 1px var(--input-text-border);
+} */
+
+::placeholder {
+	color: var(--placeholder);
 }
 
 /* back button */
@@ -323,7 +385,7 @@ a {
 		--accent-color: #f8ad62;
 		--button-text: #000000;
 		--input-text: #1b272f;
-		--input-text-border: #2a998d;
+		--input-text-border: #1b8379;
 		--input-text-border-active: #0bffe5;
 		--input-text-valid: #1b2f1c;
 		--input-text-border-valid: #2cab00;
@@ -336,6 +398,13 @@ a {
 		--error: #ff0000;
 		--radio-bg: #523921;
 		--light-color: #ffffff;
+		--placeholder: #ffffffa6;
+		--focus-color: #d1873e;
+		--text-hover: #523921;
+		--table-color: #3bcabc;
+		--button-hover: #c25700;
+		--button-active: #40352a;
+		--button-hover-text: white;
 	}
 
 	/* body:has(#colormode:checked) {
