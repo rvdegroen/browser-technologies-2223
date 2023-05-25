@@ -34,39 +34,39 @@
 		</header>
 
 		<main class="index">
+			<br class="hidden" />
+
 			<!-- student information -->
 			<form action="./wafs.html">
-				<section>
+				<fieldset>
+					<br class="hidden" />
+
 					<h2>Persoonlijke Informatie</h2>
-					<p>Als je anoniem wilt blijven, laat dan de velden leeg</p>
-				</section>
 
-				<br class="hidden" />
+					<p><em>Als je anoniem wilt blijven, laat dan de velden leeg</em></p>
 
-				<hr />
-
-				<section>
-					<br class="hidden" />
-					<!-- <h3>Tijdens het vak</h3> -->
-					<br class="hidden" />
-					<fieldset>
-						<legend>Voor- en achternaam<em> (optioneel)</em></legend>
+					<label>
+						<span> Voor- en achternaam<em> (optioneel)</em></span>
+						<!-- pattern only includes uppercase and lowercase characters (also include non-ASCII letters and - and spaces) -->
 						<br class="hidden" />
 						<input
 							type="text"
 							name="firstname"
 							id="firstname"
-							placeholder="Voor- en achternaam"
+							placeholder="Voornaam"
 							aria-placeholder="Vul je voor- en achternaam in"
 							pattern="[A-Za-z\u00EB\u00E4\u00F6\u00EF\u00EE\u00F1 -]+"
 							required
 						/>
-						<br class="hidden" />
-						<br class="hidden" />
-					</fieldset>
+					</label>
+
 					<br class="hidden" />
-					<fieldset>
-						<legend>Studentnummer<em>(optioneel)</em></legend>
+
+					<br class="hidden" />
+
+					<label>
+						<span>Studentnummer<em>(optioneel)</em></span>
+						<!-- pattern only includes uppercase and lowercase characters (also include non-ASCII letters and - and spaces) -->
 						<br class="hidden" />
 						<input
 							type="text"
@@ -77,12 +77,14 @@
 							pattern="[0-9]{9}"
 							required
 						/>
-						<br class="hidden" />
-						<br class="hidden" />
-					</fieldset>
+					</label>
+
 					<br class="hidden" />
-					<fieldset>
-						<legend>E-mailadres <em>(optioneel)</em></legend>
+
+					<br class="hidden" />
+
+					<label>
+						<span>E-mailadres <em>(optioneel)</em></span>
 						<br class="hidden" />
 						<input
 							type="email"
@@ -92,10 +94,26 @@
 							aria-placeholder="Vul je e-mail in"
 							required
 						/>
-						<br class="hidden" />
-						<br class="hidden" />
-					</fieldset>
-				</section>
+					</label>
+
+					<br class="hidden" />
+					<br class="hidden" />
+				</fieldset>
+
+				<br class="hidden" />
+
+				<!-- <fieldset>
+					<br class="hidden" />
+					<h2>Privacy</h2>
+
+					<br class="hidden" />
+
+					<p>Jouw gegevens blijven verborgen als je anoniem wilt blijven</p>
+					<label> Ik wil anoniem blijven <em>(optioneel)</em><input type="checkbox" /></label>
+
+					<br class="hidden" />
+					<br class="hidden" />
+				</fieldset> -->
 
 				<br class="hidden" />
 

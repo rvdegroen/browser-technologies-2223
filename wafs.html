@@ -34,7 +34,6 @@
 		</header>
 
 		<main>
-			<br class="hidden" />
 			<!-- subject information -->
 			<form action="./cssttr.html">
 				<section>
@@ -42,9 +41,13 @@
 					<p>Docenten: <strong>Joost Faber</strong> & <strong>Robert Spier</strong></p>
 				</section>
 
+				<br class="hidden" />
+
+				<hr />
+
 				<section>
 					<br class="hidden" />
-					<h3>Tijdens het vak</h3>
+					<!-- <h3>Tijdens het vak</h3> -->
 					<br class="hidden" />
 					<fieldset>
 						<legend>Wat voor cijfer zou je dit vak geven? *</legend>
@@ -52,12 +55,6 @@
 						<br class="hidden" />
 
 						<table>
-							<tr>
-								<td colspan="3" align="start">Heel slecht</td>
-								<td colspan="4" align="middle">Net goed</td>
-								<td colspan="3" align="end">Heel goed</td>
-							</tr>
-
 							<tr>
 								<td>
 									<label>
@@ -120,24 +117,13 @@
 									</label>
 								</td>
 							</tr>
+							<tr>
+								<td colspan="3" align="start">Heel slecht</td>
+								<td colspan="4" align="middle">Net goed</td>
+								<td colspan="3" align="end">Heel goed</td>
+							</tr>
 						</table>
 
-						<br class="hidden" />
-
-						<label for="extra-opinion">
-							Waarom heb je dit cijfer gegeven? *
-							<br class="hidden" />
-							<br class="hidden" />
-							<textarea
-								name="extra-opinion"
-								id="extra__opinion"
-								cols="30"
-								rows="3"
-								placeholder="Opmerking"
-								aria-placeholder="Typ hier je mening"
-								required
-							></textarea>
-						</label>
 						<br class="hidden" />
 						<br class="hidden" />
 					</fieldset>
@@ -149,11 +135,6 @@
 
 						<br class="hidden" />
 						<table>
-							<tr>
-								<td colspan="3" align="start">Heel slecht</td>
-								<td colspan="4" align="middle">Net goed</td>
-								<td colspan="3" align="end">Heel goed</td>
-							</tr>
 							<tr>
 								<td>
 									<label>
@@ -216,6 +197,11 @@
 									</label>
 								</td>
 							</tr>
+							<tr>
+								<td colspan="3" align="start">Heel slecht</td>
+								<td colspan="4" align="middle">Net goed</td>
+								<td colspan="3" align="end">Heel goed</td>
+							</tr>
 						</table>
 
 						<br class="hidden" />
@@ -229,12 +215,6 @@
 						<br class="hidden" />
 
 						<table>
-							<tr>
-								<td colspan="3" align="start">Heel makkelijk</td>
-								<td colspan="4" align="middle">Net goed</td>
-								<td colspan="3" align="end">Heel moeilijk</td>
-							</tr>
-
 							<tr>
 								<td>
 									<label>
@@ -297,125 +277,33 @@
 									</label>
 								</td>
 							</tr>
-						</table>
-						<br class="hidden" />
-					</fieldset>
-
-					<br class="hidden" />
-				</section>
-
-				<section>
-					<h3>Reflectie</h3>
-
-					<br class="hidden" />
-
-					<fieldset>
-						<legend>Hoe goed snap je de lesstof ter reflectie? *</legend>
-
-						<br class="hidden" />
-
-						<table>
 							<tr>
-								<td colspan="3" align="start">Heel slecht</td>
+								<td colspan="3" align="start">Makkelijk</td>
 								<td colspan="4" align="middle">Net goed</td>
-								<td colspan="3" align="end">Heel goed</td>
-							</tr>
-
-							<tr>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="1" required />
-										<span>1</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="2" />
-										<span>2</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="3" />
-										<span>3</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="4" />
-										<span>4</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="5" checked />
-										<span>5</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="6" />
-										<span>6</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="7" />
-										<span>7</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="8" />
-										<span>8</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="9" />
-										<span>9</span>
-									</label>
-								</td>
-								<td>
-									<label>
-										<input type="radio" name="subject_reflection" value="10" />
-										<span>10</span>
-									</label>
-								</td>
+								<td colspan="3" align="end">Moeilijk</td>
 							</tr>
 						</table>
 						<br class="hidden" />
 					</fieldset>
 
 					<br class="hidden" />
-				</section>
-
-				<br class="hidden" />
-
-				<section>
-					<h3>Opmerkingen</h3>
-
-					<br class="hidden" />
 
 					<fieldset>
-						<br class="hidden" />
+						<legend>Wat kan beter of wat ging goed ? *</legend>
+						<textarea
+							name="comments"
+							id="comments"
+							cols="30"
+							rows="5"
+							required
+							placeholder="Opmerkingen"
+							aria-placeholder="Typ hier je opmerkingen"
+						></textarea>
 
-						<label>
-							Wat kan beter? <em>(optioneel)</em>
-							<br class="hidden" />
-							<br class="hidden" />
-							<textarea
-								name="opinion"
-								cols="30"
-								rows="3"
-								placeholder="Opmerking"
-								aria-placeholder="Typ je opmerkingen"
-							></textarea>
-						</label>
-
-						<br class="hidden" />
 						<br class="hidden" />
 					</fieldset>
+
+					<br class="hidden" />
 				</section>
 
 				<br class="hidden" />
