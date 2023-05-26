@@ -29,6 +29,7 @@
 	--button-hover: #c25700;
 	--button-active: #40352a;
 	--button-hover-text: white;
+	--active-focus: #72471b;
 }
 
 * {
@@ -300,10 +301,12 @@ input[type='email']:valid {
 	background-color: var(--input-text-border) !important;
 }
 
-input[type='text']::after,
-input[type='email']::after {
-	content: 'it works';
-	color: white !important;
+input[type='radio']:checked:focus + span,
+textarea:valid:focus,
+input[type='text']:valid:focus,
+input[type='email']:valid:focus {
+	background-color: var(--active-focus) !important;
+	color: var(--button-hover-text);
 }
 
 /* input:focus + span,
@@ -411,8 +414,9 @@ a {
 		--text-hover: #523921;
 		--table-color: #3bcabc;
 		--button-hover: #c25700;
-		--button-active: #40352a;
+		--button-active: #774716;
 		--button-hover-text: white;
+		--active-focus: #30887f;
 	}
 
 	/* body:has(#colormode:checked) {
