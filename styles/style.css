@@ -277,6 +277,16 @@ input[type='email']:focus {
 	border: 1px solid var(--primary-color);
 }
 
+/* previous button */
+/* next button */
+form > div:last-of-type > a:focus,
+form > div:last-of-type > .button:focus,
+form > div:last-of-type > button:focus {
+	background-color: var(--button-active);
+	color: var(--button-hover-text);
+	transition: ease-in-out 0.2s;
+}
+
 /* invalid */
 input[type='radio']:focus:invalid + span {
 	background-color: red !important;
